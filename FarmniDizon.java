@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class FarmniDizon {
+public class NewClass {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class FarmniDizon {
         System.out.println(
                 "============================== \n"
                 + " Welcome to Dizon Dairy Farms \n"
-                + "============================== ");
+                + "============================== \n");
         System.out.print("Enter number of eggs: ");
         int egg = Integer.valueOf(sc.nextLine());
         if (egg < 0) {
@@ -27,9 +27,9 @@ public class FarmniDizon {
             double price = (dozen * 36) + (loose * 4.75);
             System.out.println("No. of dozen: " + dozen + " at Php 36.00 per dozen\n"
                     + "No. of loose eggs: " + egg + " at Php 4.75 each.\n"
-                    + "==============================\n"
-                    + "Your Total Amount Due is: " + price + "\n"
-                    + "==============================");
+                    + "==============================\n");
+            System.out.printf("Your Total Amount Due is: %,.2f\n", price);
+            System.out.println("==============================");
 
         }
     }
